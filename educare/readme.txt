@@ -1,14 +1,14 @@
 === Educare - Students & Result Management System ===
 
 Contributors:        fixbd
-GitHub link:         https://github.com/fixbd/educare
-Tags:                Result management, Academic, Results, Students, Education, School, College, Exam, School management, publish results, Coaching Center
-Requires at least:   3.8
-Tested up to:        6.5.2
-Requires PHP:        5.2.4
-Stable tag:          1.4.9
+Donate link:         https://buymeacoffee.com/fixbd
 License:             GPLv2 or later
 License URI:         http://www.gnu.org/licenses/gpl-2.0.html
+Tags:                Academic, Education, Result Management, Results, Students & School Management
+Requires at least:   3.8
+Tested up to:        6.7.1
+Stable tag:          1.5.0
+Requires PHP:        5.2.4
 
 No. 1 Academic Students & Result Management solutions For WordPress. Educare Help You To Easily Publish And Manage Any Type Of Results At Online.
 
@@ -18,11 +18,13 @@ No. 1 Academic Students & Result Management solutions For WordPress. Educare Hel
 
 Educare is a online Students & Results management system developed by FixBD. This powerful results management plugin is built to easily manage institute, academy, or student results online. Designed to be universally adaptable, this solution seamlessly integrates with result systems across the world. No matter the format, Educare supports diverse result systems, making it your go-to choice for streamlined and efficient management.
 
-[youtube https://youtu.be/U29ZoNDBiDU]
+[youtube https://youtu.be/WN17qvzBqDs]
 
 Educare is free and always will be, but it has a premium version that is even more functional and powerful.
 
 Please note: This is an old video. We are updating Educare regularly. More features have been added in the updated version. We will upload it soon.
+
+[youtube https://youtu.be/AlNzzWjNmjk]
 
 == Features ==
 
@@ -410,7 +412,13 @@ Email: fixbd.org@gmail.com
 
 == Changelog ==
 
-Here are the highlights of the last four updates:
+Here are the highlights of the last few updates:
+
+= [1.5.0] =
+
+* Fixed an issue causing invalid results to display on the front end.
+* Addressed a problem where results were not displayed when added without a subject.
+* Updated "Tested up to" WordPress version to 6.7.1
 
 = [1.4.9] =
 

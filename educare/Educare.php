@@ -1,7 +1,7 @@
 <?php
 /**
  * @package		Educare
- * @version 	1.4.9
+ * @version 	1.5.0
  * @author	  	FixBD <fixbd.org@gmail.com>
  * @copyright  	GPL-2.0+
  * @link		http://github.com/fixbd/educare
@@ -10,7 +10,7 @@
  * Plugin Name:  Educare
  * Plugin URI:	 http://github.com/fixbd/educare
  * Description:	 Educare is a online Students & Results management system developed by FixBD. This powerful results management plugin is built to easily manage institute, academy, or student results online. Designed to be universally adaptable, this solution seamlessly integrates with result systems across the world. No matter the format, Educare supports diverse result systems, making it your go-to choice for streamlined and efficient management.
- * Version:      1.4.9
+ * Version:      1.5.0
  * Author:       FixBD
  * Author URI:   http://fixbd.net
  * License:		 GPL-2.0+
@@ -44,7 +44,7 @@ if ( ! defined( 'EDUCARE_VERSION' ) ) {
 
     // Make it simple! (Define Educare Name-Space)
     // Plugin Version
-	define('EDUCARE_VERSION', '1.4.9');
+	define('EDUCARE_VERSION', '1.5.0');
     // Settings Version
     define('EDUCARE_SETTINGS_VERSION', '1.0');
     define('EDUCARE_RESULTS_VERSION', '1.0');

@@ -1,10 +1,16 @@
+## [1.5.0]
+
+- Fixed an issue causing invalid results to display on the front end.
+- Addressed a problem where results were not displayed when added without a subject.
+- Updated "Tested up to" WordPress version to 6.7.1
+
 ## [1.4.9]
 
-- Sets the WordPress tested up to version to 6.5.2
+- Set the WordPress tested up to version to 6.5.2
 
 ## [1.4.8]
 
-- Sets the WordPress tested up to version to 6.4.2
+- Set the WordPress tested up to version to 6.4.2
 - Resolved backslash issues when add extra fields with character (').
 
 ## [1.4.7]
@@ -16,7 +22,7 @@
 ## [1.4.6]
 
 - Removed unnecessary code and comments.
-- Sets the WordPress tested up to version to 6.3.1
+- Set the WordPress tested up to version to 6.3.1
 
 ## [1.4.5]
 
