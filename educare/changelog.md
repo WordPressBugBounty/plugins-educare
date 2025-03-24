@@ -1,3 +1,59 @@
+= 1.6.0 - Major Update 🚀 =  
+
+✅ **User Interface & UX Improvements**  
+- Updated and improved the UI for a better experience.  
+- Enhanced data pagination for smoother navigation.  
+
+✅ **New Features & Enhancements**  
+- Added default **Result Card** and **Search Form** templates.  
+- Introduced a **Certificate System** (*).  
+- Added **Attendance System** (*).  
+- Implemented **Student, Teacher, and Staff Profiles with Dashboards** (*).  
+- Now you can **customize result cards** directly from settings.  
+- Added **School Admin Profiles & Dashboards** (*).  
+
+✅ **Better Data Management & Controls**  
+- Improved **visibility settings** (Publish, Scheduled, Pending, Rejected) for student and result data.  
+- Added a status counter to track the number of **Published, Scheduled, Pending, or Rejected** entries.  
+- Now possible to **set extra (custom) fields** for students, teachers, staff, and results.  
+
+✅ **Marks & Results System Upgrades**  
+- Enhanced the **Mark Sheet System** for better usability.  
+- Now supports **batch entry of multiple students and multiple subject marks** at once (*).  
+- Improved **grading, rating scale, and remarks system** (*).  
+
+✅ **AI & Smart Features**  
+- Added **AI Specialization Pathway Mapping Templates** (*).  
+- Improved **Educare AI problem detection and guidelines**.  
+- Enhanced **search algorithms** for faster results.  
+
+✅ **Advanced Filtering & Multi-School Support**  
+- Introduced **advanced filtering options** for better data management.  
+- Added **Multi-School Management functionalities** (*).  
+- Implemented **Terms in Educare Management** (*).  
+
+✅ **Bug Fixes & Performance Improvements**  
+- Resolved issues where **updates were not reflecting on previously added student and result data**.  
+- Fixed known **bugs and errors**.  
+- Improved overall **performance and stability**.  
+
+🎉 **This update makes Educare more powerful, efficient, and user-friendly than ever! Upgrade now and experience the change!** 🚀  
+
+(*) – **Some features are available for premium users only.** 
+
+**Import Note:** Clear your browser cache/data after updating from Educare v1.5.0 to v1.6.0 (or later versions) to ensure proper loading of updated CSS and scripts. This applies only when updating from Educare v1.5.0 or earlier to any version v1.6.0 or higher.
+
+**Custom Hook Adjustments:** If you are using **Educare customization hooks** for a **custom search form or results card**, you may need to adjust some code.  
+Please check out the updated hooks from this - [documentations](https://fixbd.com/docs/educare/how-to-customize-frond-end/).
+
+**Backup Recommendation:** No data will be lost with this update. But, We've made significant changes in this update. It is highly recommended to **take a full backup** before updating to this version.
+
+After upgrading from Educare v1.5.0 to v1.6.0 (or later), you may see this notice:
+
+"The plugin educare/Educare.php has been deactivated due to an error: Plugin file does not exist."
+
+This occurs because we renamed the main file from **Educare.php** to **educare.php** (lowercase). So, if you encounter this notice, simply ignore it—it. It's not an issue.
+
 ## [1.5.0]
 
 - Fixed an issue causing invalid results to display on the front end.
