@@ -6,7 +6,7 @@ License:             GPLv2 or later
 License URI:         http://www.gnu.org/licenses/gpl-2.0.html
 Tags:                academic, result checker, education, learning management system, lms
 Requires at least:   3.8
-Tested up to:        6.7.2
+Tested up to:        6.8.0
 Stable tag:          1.6.0
 Requires PHP:        5.2.4
 
