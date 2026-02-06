@@ -1,3 +1,16 @@
+= 1.6.3 =  
+- Fixed an issue where previous student data was not displaying and new entries could not be added
+- Resolved known issues and errors
+- Tested up to WordPress version 6.9.0
+
+= 1.6.2 = 
+- Resolved Cross Site Scripting (XSS) vulnerability issue
+- Resolved well-khown issues and error
+
+= 1.6.1 =  
+- Resolved well-khown issues and error
+- Tested up to version to 6.8.3
+
 = 1.6.0 - Major Update 🚀 =  
 
 ✅ **User Interface & UX Improvements**  

@@ -4756,9 +4756,9 @@ function educare_settings_form() {
 							<?php
 							educare_settings_status('banner_settings', '', "");
 
-							educare_settings_status('show_banner', 'Show Banner', "Enable or disable the display of the banner, including the title, subtitle, and logo, on the results card or search form");
+							educare_settings_status('show_banner', 'Show Banner', "Enable or disable the display of the banner, including the title, subtitle, and logo, on the results card or search form", null, true);
 
-							educare_settings_status('admin_area_banner', 'Admin Area Banner', "Show banner (Title, Subtitle and Logo) in admin area. If you don't need to show banner in admin area, just uncheck it.");
+							educare_settings_status('admin_area_banner', 'Admin Area Banner', "Show banner (Title, Subtitle and Logo) in admin area. If you don't need to show banner in admin area, just uncheck it.", null, true);
 							?>
 
 						</div>

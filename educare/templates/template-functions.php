@@ -195,7 +195,7 @@ function educare_get_option($data_for = 'Class', $specific_key = false) {
 			}
 
 			foreach ($results as $value) {
-				echo '<option value="'.esc_attr( $value ).'" '.selected($current_value, $value, false ).'>'.esc_html( $value ).'</option>';
+				echo '<option value="'.esc_attr( $value ).'" '.selected($current_value, esc_attr($value), false ).'>'.esc_html( $value ).'</option>';
 			}
 		} else {
 			echo '<option value="">Not found</option>';
@@ -728,18 +728,18 @@ function educare_get_marks_input($terms, $subArray, $unique, $subject) {
 			}
 
 			echo '<div class="auto-fields">'.wp_kses_post($auto).'</div>';
-			echo '<input type="hidden" name="' . esc_attr($subArray) . '[' . esc_attr($unique) . '][' . esc_attr($subject) . '][' . $term . ']" value="' . $value . '">';
+			echo '<input type="hidden" name="' . esc_attr($subArray) . '[' . esc_attr($unique) . '][' . esc_attr($subject) . '][' . esc_attr($term) . ']" value="' . esc_attr($value) . '">';
 		} else {
 			// Select field
 			if ($termInfo['type'] == 'select') {
-				echo '<select name="' . esc_attr($subArray) . '[' . esc_attr($unique) . '][' . esc_attr($subject) . '][' . $term . ']">';
+				echo '<select name="' . esc_attr($subArray) . '[' . esc_attr($unique) . '][' . esc_attr($subject) . '][' . esc_attr($term) . ']">';
 				foreach ($termInfo['value'] as $val) {
 					echo '<option value="'.esc_attr($val).'" '.selected( $val, $value, false).'>' . esc_html($val) . '</option>';
 				}
 				echo '</select>';
 			} else {
 				// Input field
-				echo '<input type="' . esc_attr($termInfo['type']) . '" name="' . esc_attr($subArray) . '[' . esc_attr($unique) . '][' . esc_attr($subject) . '][' . $term . ']" value="' . $value . '" step="any">';
+				echo '<input type="' . esc_attr($termInfo['type']) . '" name="' . esc_attr($subArray) . '[' . esc_attr($unique) . '][' . esc_attr($subject) . '][' . esc_attr($term) . ']" value="' . esc_attr($value) . '" step="any">';
 			}
 		}
 
@@ -817,8 +817,10 @@ function educare_get_marks_fields($roles, $subjects, $unique = 0, $subArray = 'S
 							if ($term == 'no') echo '<td>' . esc_html($serialNo++) . '</td>';
 							if ($term == 'subject') echo '<td>' . esc_html($subject) . '</td>';
 	
-							if (property_exists($subject, $term)) {
-								echo '<td>' . esc_html($subject->$term) . '</td>';
+							if (is_object($subject)) {
+								if (property_exists($subject, $term)) {
+									echo '<td>' . esc_html($subject->$term) . '</td>';
+								}
 							}
 						}
 
@@ -1582,44 +1584,13 @@ function educare_results_status($print) {
 
 
 function educare_template_banner($school_id = null) {
-	if (educare_check_status('show_banner') == 'checked') {?>
-		<div class="d-flex text-center banner">
-			<div class="banner-logo d-none d-sm-block">
-				<img src="<?php echo esc_url(educare_get_attachment(0, 'logo1'))?>">
-			</div>
-
-			<div class="title">
-				<div>
-					<h2 class="m-2">Institutions Name Or Title</h2>
-					<p class="px-5 sub-title">Rangpur, Dhaka, Bangladesh</p>
-					<p class="px-5 sub-title">Founded in <?php echo esc_html(date('Y'))?></p>
-				</div>
-			</div>
-
-			<div class="banner-logo d-none d-sm-block">
-				<img src="<?php echo esc_url(educare_get_attachment(0, 'logo2'))?>">
-			</div>
-			
-		</div>
-
-		<?php
-	}
+	return false;
 }
 
 
 
 function educare_show_school_banner($school_id = null) {
-	$admin_area_banner = educare_check_status('admin_area_banner');
-
-	if ($admin_area_banner == 'checked') {
-		// Show banner
-		echo '<div class="my-5">';
-		educare_template_banner($school_id);
-		echo '</div>';
-		
-		echo '<div class="educare-header-container"></div>';
-	}
-	
+	return false;
 }
 
 

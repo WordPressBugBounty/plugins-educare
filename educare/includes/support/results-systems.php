@@ -20,9 +20,8 @@ if (!defined('ABSPATH')) {
  */
 
 function educare_add_float_num($number) {
-  if (!is_float($number)) {
-    return $number+0.9;
-  }
+	// Ensure the number is converted to a float before addition
+	return floatval($number) + 0.9;
 }
 
 

@@ -156,8 +156,13 @@ class educareUpdateChecker {
                     return false;
                 }
 
+                if ( ! function_exists( 'get_current_screen' ) ) {
+                    require_once ABSPATH . 'wp-admin/includes/screen.php';
+                }
+
                 // Get the current screen object safely
                 $screen = get_current_screen();
+
                 if (!$screen) {
                     // log_it('Unable to get screen information');
                     return false;
@@ -199,7 +204,7 @@ class educareUpdateChecker {
                 }
                 
                 if (
-                    $remote &&
+                    isset($remote->version) &&
                     version_compare($this->version, sanitize_text_field($remote->version), '<') &&
                     version_compare(sanitize_text_field($remote->requires), get_bloginfo('version'), '<=') &&
                     version_compare(sanitize_text_field($remote->requires_php), PHP_VERSION, '<')

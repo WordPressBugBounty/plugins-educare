@@ -4,21 +4,19 @@ Contributors:        fixbd
 Donate link:         https://buymeacoffee.com/fixbd
 License:             GPLv2 or later
 License URI:         http://www.gnu.org/licenses/gpl-2.0.html
-Tags:                academic, result checker, education, learning management system, lms
+Tags:                Academic, Education, Result Management, Results, Students & School Management
 Requires at least:   3.8
-Tested up to:        6.8.0
-Stable tag:          1.6.0
+Tested up to:        6.9.0
+Stable tag:          1.6.3
 Requires PHP:        5.2.4
 
-No. 1 Academic Students & Result Management solution for WordPress. Educare helps you effortlessly publish and manage student results online.
+No. 1 Academic Students & Result Management system for WordPress. Educare helps you effortlessly publish and manage student results online.
 
 == Description ==
 
-**The Ultimate Student Results Management System for WordPress**
+**No. 1 Academic Result Management Plugin For WordPress Users.**
 
 Educare is an advanced student results management system developed by FixBD. This powerful result management plugin allows institutes, academies, and schools to efficiently manage and publish student portal results online.
-
-Seamlessly integrated with WordPress, Educare is a powerful result checker system supporting diverse formats worldwide - perfect for any academic institution.
 
 [youtube https://youtu.be/WN17qvzBqDs]
 
@@ -73,7 +71,7 @@ Now, let's dive deeper into these powerful features and how they can transform y
 - Simplicity Meets Power – As simple as it looks, yet incredibly powerful and useful.
 - Responsive and User-Friendly Design (UI) – Optimized for both desktop and mobile users.
 
-After exploring these features, you’ll see why Educare is the ideal solution for your needs. Ready to unlock advanced features? [Upgrade to Educare Pro version](https://fixbd.com/plugins/educare) today.
+After exploring these features, you’ll see why Educare is the ideal solution for your needs. Ready to unlock advanced features? [✨ Upgrade to Educare Pro version](https://fixbd.com/plugins/educare) today.
 
 * [Check the Demos](https://educare.fixbd.net/results)
 
@@ -393,8 +391,11 @@ Email: fixbd.org@gmail.com
 
 == Upgrade to Educare Pro ==  
 
-Unlock powerful features like **AI grading, multi-school management, certificate generation, and custom result templates**.  
-[Upgrade to Educare Pro](https://fixbd.com/plugins/educare) today!
+Unlock powerful features like **AI grading, multi-school management, certificate generation, and custom result templates**. Seamlessly integrated with WordPress, Educare is a powerful result checker system supporting diverse formats worldwide - perfect for result system.
+
+[👉 Educare Pro](https://fixbd.com/plugins/educare)
+[👉 Educare Templates](https://fixbd.com/plugins/educare/templates)
+[👉 Educare Add-Ons](https://fixbd.com/plugins/educare/add-ons)
 
 == Screenshots ==
 
@@ -422,6 +423,19 @@ Unlock powerful features like **AI grading, multi-school management, certificate
 21. Customize Grading System
 
 == Changelog ==
+
+= 1.6.3 =  
+* Fixed an issue where previous student data was not displaying and new entries could not be added
+* Resolved known issues and errors
+* Tested up to WordPress version 6.9.0
+
+= 1.6.2 = 
+* Resolved Cross Site Scripting (XSS) vulnerability issue
+* Resolved well-khown issues and error
+
+= 1.6.1 =  
+* Resolved well-khown issues and error
+* Tested up to version to 6.8.3
 
 = 1.6.0 - Major Update 🚀 =
 

@@ -325,7 +325,7 @@ function educare_display_data($roles = 'students', $per_page = null) {
 					?>
 					
 					<div class="p-1 w-100">
-						<input type="text" class="rounded-pill text-center" name="search" value="<?php echo $search?>" placeholder="<?php _e(__('Search', 'educare')); ?>" title="Search specific data">
+						<input type="text" class="rounded-pill text-center" name="search" value="<?php echo esc_attr($search);?>" placeholder="<?php _e(__('Search', 'educare')); ?>" title="Search specific data">
 					</div>
 
 					
@@ -610,7 +610,7 @@ function educare_display_data($roles = 'students', $per_page = null) {
 								$default_check = educare_check_status($key, true);
 								if ($default_check) {
 									$col++;
-									echo '<th class="data_list_'.strtolower($key).'">'.esc_html__($default_check, 'educare').'</th>';
+									echo '<th class="data_list_'.esc_attr(strtolower($key)).'">'.esc_html__($default_check, 'educare').'</th>';
 								}
 							}
 						}
@@ -665,13 +665,13 @@ function educare_display_data($roles = 'students', $per_page = null) {
 														$display_value = $print->$key;
 													}
 
-													echo '<td data-bs-toggle="collapse" data-bs-target="#data-'.esc_attr($count).'" class="accordion-toggle data_list_'.strtolower($key).'">'.esc_html($display_value).'</td>';
+													echo '<td data-bs-toggle="collapse" data-bs-target="#data-'.esc_attr($count).'" class="accordion-toggle data_list_'.esc_attr(strtolower($key)).'">'.esc_html($display_value).'</td>';
 													
 												} else {
 													if ($key == 'Group') {
-														echo '<td data-bs-toggle="collapse" data-bs-target="#data-'.esc_attr($count).'" class="accordion-toggle data_list_'.strtolower($key).'">'.__('N/A', 'educare').'</td>';
+														echo '<td data-bs-toggle="collapse" data-bs-target="#data-'.esc_attr($count).'" class="accordion-toggle data_list_'.esc_attr(strtolower($key)).'">'.__('N/A', 'educare').'</td>';
 													} else {
-														echo '<td class="error" data-bs-toggle="collapse" data-bs-target="#data-'.esc_attr($count).'" class="accordion-toggle data_list_'.strtolower($key).'">'.__('N/A', 'educare').'</td>';
+														echo '<td class="error" data-bs-toggle="collapse" data-bs-target="#data-'.esc_attr($count).'" class="accordion-toggle data_list_'.esc_attr(strtolower($key)).'">'.__('N/A', 'educare').'</td>';
 														$results_button = 'error';
 														$results_value = 'dashicons-hidden';
 														$results_title = sprintf(__('This %s is not visible for users. Because, some required field are empty. Fill all the required field carefully. Otherwise, users getting arror notice when someone find this %s. Click pen (Edit) button for fix this issue.', 'educare'), esc_html( $roles ), esc_html__( $roles, 'educare' ));
